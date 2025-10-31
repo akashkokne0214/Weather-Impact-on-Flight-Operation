@@ -31,7 +31,7 @@ A clustered bar chart displaying how different travel purposes (Business, Family
 ---
 
 ## Dashboard Link
-- <a href="https://mavenshowcase.com/project/53286>View Dashboard</a>
+- <a href="https://mavenshowcase.com/project/53286">View Dashboard</a>
 ---
 
 ## 🧭 Filters & Segmentation
