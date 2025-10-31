@@ -1,0 +1,91 @@
+Weather Impact on Flight Operations 
+
+Value #252423
+
+Line #DDFD00
+
+Column #B3B3B3
+
+Column #4E5750
+
+Button #E3E3E3
+==========================================
+
+Avg_Delay_Flights = 
+CALCULATE(
+    AVERAGE(Flights_Dataset[Delay_Minutes])
+)
+
+---------------------------------------------
+Avg_Delay_Weather_Impact = 
+CALCULATE(
+    AVERAGE(Flights_Dataset[Delay_Minutes]),
+    Flights_Dataset[Weather_Impact] = 1
+)
+
+---------------------------------------------
+Avg_Flight_Satisfaction = 
+CALCULATE(
+    AVERAGE(Flights_Dataset[Flight_Satisfaction_Score])
+)
+
+--------------------------------------------------------
+No_Show_Rate%_Weather_Impact = 
+VAR TotalFlight =
+    CALCULATE(
+        COUNTROWS(Flights_Dataset), 
+        Flights_Dataset[Weather_Impact] = 1)
+VAR NoShowFlights = 
+    CALCULATE(
+        COUNTROWS(Flights_Dataset),
+        Flights_Dataset[Weather_Impact] = 1,
+        Flights_Dataset[No_Show] = 1
+    )
+RETURN
+DIVIDE(NoShowFlights, TotalFLight)
+
+----------------------------------------------------------------------------
+On_Time_Weather_Impact = 
+VAR TotalFlights = 
+    CALCULATE(
+        COUNTROWS(Flights_Dataset), 
+        Flights_Dataset[Weather_Impact] = 1)
+VAR OnTimeFlights =
+    CALCULATE(
+        COUNTROWS(Flights_Dataset),
+        Flights_Dataset[Weather_Impact] = 1,
+        Flights_Dataset[Delay_Minutes] <= 15
+    )
+RETURN
+DIVIDE(OnTimeFlights, [Total_Flights])
+
+---------------------------------------------------------------
+Total_Cancellation_Weather_Impact = 
+CALCULATE(
+    COUNTROWS(Flights_Dataset),
+    Flights_Dataset[Weather_Impact] = 1,
+    Flights_Dataset[Flight_Status] = "Cancelled"
+)
+
+-------------------------------------------------------------
+Total_Flight_Weather_Impact = 
+CALCULATE(
+    COUNTROWS(Flights_Dataset),
+    Flights_Dataset[Weather_Impact] = 1
+)
+
+----------------------------------------------------------
+Total_Flights = COUNTROWS(Flights_Dataset)
+
+--------------------------------------------------
+Calculated Columns
+
+Cancellation_Lebel = 
+IF(Flights_Dataset[Flight_Status] = "Cancelled", "Cancelled", "Not Cancelled")
+
+
+Departure_Date = FORMAT(Flights_Dataset[Departure_Time], "dd/mm/yyyy hh:mm")
+
+
+Weather_Impact_Lebel = 
+IF(Flights_Dataset[Weather_Impact] = 1, "Weather Impact", "No Weather Impact")
