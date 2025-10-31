@@ -31,8 +31,7 @@ A clustered bar chart displaying how different travel purposes (Business, Family
 ---
 
 ## Dashboard Link
-- <a href="https://github.com/akashkokne0214/Energy-Flow-Analysis/blob/main/Screenshot.png">View Dashboard</a>
-
+- <a href="https://mavenshowcase.com/project/53286>View Dashboard</a>
 ---
 
 ## 🧭 Filters & Segmentation
