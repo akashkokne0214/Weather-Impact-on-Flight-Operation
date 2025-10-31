@@ -1,9 +1,7 @@
 # ✈️Weather-Impact-on-Flight-Operation | Power BI
 
 ## 🖼️ Dashboard
-<img width="1415" height="792" alt="Screenshot" src="https://github.com/user-attachments/assets/fe388adc-65d7-4953-ad85-8523c6201211" />
-
-<img width="1415" height="792" alt="Screenshot" src="https://github.com/akashkokne0214/Weather-Impact-on-Flight-Operation/blob/main/Background_FlightDashboard.png"/>
+<img width="1415" height="792" alt="Screenshot" src="https://github.com/akashkokne0214/Weather-Impact-on-Flight-Operation/blob/main/Weather_Impact_on_Flight_Operation.png"/>
 
 
 ## 📌 Project Overview
@@ -29,8 +27,7 @@ A clustered bar chart displaying how different travel purposes (Business, Family
 ---
 
 ## 📑 Dataset used
-- <a href="https://github.com/akashkokne0214/Energy-Flow-Analysis/blob/main/Energy%20Dataset.zip">Dataset</a>
-
+- <a href="https://github.com/akashkokne0214/Weather-Impact-on-Flight-Operation/blob/main/Flights_Dataset.csv">Dataset</a>
 ---
 
 ## Dashboard Link
