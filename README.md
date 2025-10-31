@@ -3,6 +3,8 @@
 ## 🖼️ Dashboard
 <img width="1415" height="792" alt="Screenshot" src="https://github.com/user-attachments/assets/fe388adc-65d7-4953-ad85-8523c6201211" />
 
+<img width="1415" height="792" alt="Screenshot" src="https://github.com/akashkokne0214/Weather-Impact-on-Flight-Operation/blob/main/Background_FlightDashboard.png"/>
+
 
 ## 📌 Project Overview
 The **Weather Impact on Flight Operations** Dashboard is a Power BI visualization designed to analyze how different weather conditions influence flight performance metrics such as delays, cancellations, and passenger satisfaction.
